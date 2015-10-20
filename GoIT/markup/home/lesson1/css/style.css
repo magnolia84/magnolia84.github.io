@@ -1,0 +1,21 @@
+body {
+    background-color: #EEEEEE;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.main-content {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px #ccc;
+    padding: 60px;
+}
+
+.head-content {
+    text-align: center;
+}
