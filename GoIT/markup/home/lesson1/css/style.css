@@ -1,21 +1,24 @@
 body {
-    background-color: #EEEEEE;
+    background-color: #EEE;
 }
-
 h1 {
-    margin-bottom: 0;
+    margin: 0;
 }
-
 p {
     margin: 0;
 }
-
 .main-content {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     box-shadow: 0 0 4px #ccc;
     padding: 60px;
+    width: 500px;
+    margin: 0 auto;
 }
-
 .head-content {
     text-align: center;
+}
+.job-title, .frontend-pros, .contact-info {
+    border-bottom: 2px solid #ABABAB;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
