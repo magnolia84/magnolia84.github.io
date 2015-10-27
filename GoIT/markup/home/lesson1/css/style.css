@@ -17,7 +17,7 @@ p {
 .head-content {
     text-align: center;
 }
-.job-title, .sub-content {
+.sub-content {
     border-bottom: 2px solid #ABABAB;
     margin-bottom: 10px;
     padding: 0 15px 10px;
