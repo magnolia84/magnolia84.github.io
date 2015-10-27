@@ -17,8 +17,14 @@ p {
 .head-content {
     text-align: center;
 }
-.job-title, .frontend-pros, .contact-info {
+.job-title, .sub-content {
     border-bottom: 2px solid #ABABAB;
     margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 0 15px 10px;
+}
+.network-profile {
+    padding-top: 20px;
+}
+.footer-content {
+    padding: 0 15px 0;
 }
