@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #EEE;
+}
+.logo {
+    padding: 40px;
+}
+.main-page {
+    width: 1100px;
+    min-height: 1000px;
+    margin: 10px auto;
+    background-color: #FFF;
+    box-shadow: 0 0 4px #ccc;
+}
+.top-menu-container, .footer {
+    padding: 0 40px;
+}
+.top-menu {
+    width: auto;
+    height: 40px;
+    display: block;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    background: transparent url("../img/menu_background.png") repeat-x top right;
+}
+.top-menu li, .footer li {
+    display:block;
+    float:left;
+}
+.top-menu a {
+    display: block;
+    padding: 12px 47px 0;
+    height: 28px;
+    text-decoration: none;
+    color: #FFF;
+}
+.top-menu li.active {
+    background: transparent url("../img/productsON.png") repeat-x top right;
+    border-right: 2px solid #666;
+    border-left: 2px solid #666;
+}
+.description {
+    width: 100%;
+    margin-top: 40px;
+}
+.left-menu-container {
+    padding: 0 40px;
+    width: 280px;
+    float: left;
+}
+.left-menu {
+    list-style-type: none;
+}
+.left-menu li {
+    background-color: #FFF;
+}
+.left-menu li a {
+    text-decoration: none;
+    display: block;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    padding: 15px 30px;
+    color: #666;
+}
+.left-menu li.phone {
+    background-color: #F9F9F9;
+}
+.left-menu li.phone a {
+    padding: 15px 30px 15px 50px;
+}
+.bike {
+    width: 700px;
+    float: left;
+}
+.photo {
+    border: solid 1px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    float: right;
+}
+.image-container {
+    height: 400px;
+}
+.text {
+    margin-top: 30px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    padding: 0 10px 0 50px;
+}
+.footer a, .copyright {
+    display: block;
+    padding: 12px 47px 0;
+    margin-top: 60px;
+    height: 28px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #E1E1E1;
+    color: #666;
+   }
+.copyright {
+    padding: 12px 47px 0 225px;
+}
+.active-footer {
+    text-decoration: underline;
+}
