@@ -6,21 +6,24 @@ body {
     background-color: #EEE;
 }
 .logo {
-    padding: 40px;
+    margin-left: 40px;
 }
 .main-page {
     width: 962px;
-    min-height: 1000px;
+    min-height: 900px;
     margin: 0 auto;
     background-color: #FFF;
     box-shadow: 0 0 4px #ccc;
-    padding: 0 50px;
+    padding: 50px 50px 0;
+}
+.top-menu-container {
+    margin-top: 30px;
 }
 .top-menu {
     height: 40px;
-    font: 14px Helvetica,Arial,Verdana,sans-serif;
+    font: 14px/normal Helvetica,Arial,Verdana,sans-serif;
     list-style-type: none;
-    background: transparent url("../img/menu_background.png") repeat-x top right;
+    background-image: linear-gradient(to top, #454545 0%, #5D5D5D 100%);
 }
 .top-menu li {
     margin-right: 38px;
@@ -38,10 +41,19 @@ body {
 .top-menu a:hover, .footer a:hover, .left-menu a:hover {
     color: #F26026;
 }
-.top-menu li.active {
-    background: transparent url("../img/productsON.png") repeat-x top right;
+.top-menu li.active, .top-menu a:hover {
+    background-color: #3d3d3d;
     border-right: 2px solid #666;
     border-left: 2px solid #666;
+}
+.top-menu a:hover {
+    padding: 12px 23px 0;
+}
+.top-menu li.active a:hover {
+    padding: 12px 25px 0;
+}
+.top-menu li.active:hover {
+    border: none;
 }
 .main {
     width: 100%;
@@ -56,23 +68,20 @@ body {
 .left-menu {
     list-style-type: none;
 }
-.left-menu li {
-}
 .left-menu li a {
     text-decoration: none;
     display: block;
-    font: 14px Helvetica, Arial, Verdana, sans-serif;
+    font: 14px/40px Helvetica, Arial, Verdana, sans-serif;
     border: solid 1px #ccc;
     border-top: 0;
     padding: 0 30px;
     height: 40px;
-    line-height: 40px;
     color: #666;
 }
 ul.left-menu > :first-child {
     border-top: solid 1px #ccc;
 }
-.left-menu li.active {
+.left-menu li.active, .left-menu li a:hover {
     background-color: #F9F9F9;
 }
 .left-menu li.active a {
@@ -83,7 +92,6 @@ ul.left-menu > :first-child {
     float: left;
 }
 .image-container {
-    height: 400px;
     line-height: 400px;
     border: solid 1px #ccc;
     box-shadow: 0 0 2px #ccc;
@@ -94,26 +102,33 @@ ul.left-menu > :first-child {
 }
 .text {
     margin-top: 30px;
-    font: 15px Verdana, sans-serif;
+    font: 13px/normal Verdana, sans-serif;
     padding: 0 10px 0 50px;
+}
+.text p {
+    margin-bottom: 15px;
 }
 .footer {
     background-color: #E1E1E1;
     height: 40px;
 }
+.footer ul {
+    overflow: hidden;
+}
 .footer li {
     list-style-type: none;
+    padding: 12px 95px 0 25px;
 }
 .footer a, .copyright {
     display: block;
-    padding: 12px 95px 0 25px;
     text-decoration: none;
-    font: 14px Helvetica, Arial, Verdana, sans-serif;
+    font: 14px/normal Helvetica, Arial, Verdana, sans-serif;
     color: #666;
 }
 .copyright {
     float: right;
-    padding-right: 25px;
+    padding: 0 25px;
+    margin-top: -17px;
 }
 .active-footer {
     text-decoration: underline;
