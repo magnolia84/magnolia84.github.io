@@ -21,7 +21,7 @@ body {
 }
 .top-menu {
     height: 40px;
-    font: 14px/normal Helvetica,Arial,Verdana,sans-serif;
+    font: 14px/29px Helvetica,Arial,Verdana,sans-serif;
     list-style-type: none;
     background-image: linear-gradient(to top, #454545 0%, #5D5D5D 100%);
 }
@@ -33,13 +33,10 @@ body {
 }
 .top-menu a {
     display: block;
-    padding: 12px 25px 0;
-    height: 28px;
+    padding: 6px 25px 0;
+    height: 33px;
     text-decoration: none;
     color: #FFF;
-}
-.top-menu a:hover, .footer a:hover, .left-menu a:hover {
-    color: #F26026;
 }
 .top-menu li.active, .top-menu a:hover {
     background-color: #3d3d3d;
@@ -47,10 +44,10 @@ body {
     border-left: 2px solid #666;
 }
 .top-menu a:hover {
-    padding: 12px 23px 0;
+    padding: 6px 23px 0;
 }
 .top-menu li.active a:hover {
-    padding: 12px 25px 0;
+    padding: 6px 25px 0;
 }
 .top-menu li.active:hover {
     border: none;
@@ -71,7 +68,7 @@ body {
 .left-menu li a {
     text-decoration: none;
     display: block;
-    font: 14px/40px Helvetica, Arial, Verdana, sans-serif;
+    font: 13px/39px Helvetica, Arial, Verdana, sans-serif;
     border: solid 1px #ccc;
     border-top: 0;
     padding: 0 30px;
@@ -84,7 +81,7 @@ ul.left-menu > :first-child {
 .left-menu li.active, .left-menu li a:hover {
     background-color: #F9F9F9;
 }
-.left-menu li.active a {
+.left-menu li.active a, .left-menu li a:hover {
     padding: 0 30px 0 50px;
 }
 .content {
@@ -92,7 +89,7 @@ ul.left-menu > :first-child {
     float: left;
 }
 .image-container {
-    line-height: 400px;
+    padding: 50px 0;
     border: solid 1px #ccc;
     box-shadow: 0 0 2px #ccc;
     text-align: center;
@@ -102,7 +99,7 @@ ul.left-menu > :first-child {
 }
 .text {
     margin-top: 30px;
-    font: 13px/normal Verdana, sans-serif;
+    font: 13px/21px Verdana, sans-serif;
     padding: 0 10px 0 50px;
 }
 .text p {
@@ -117,21 +114,24 @@ ul.left-menu > :first-child {
 }
 .footer li {
     list-style-type: none;
-    padding: 12px 95px 0 25px;
+    padding: 6px 95px 0 25px;
 }
 .footer a, .copyright {
     display: block;
     text-decoration: none;
-    font: 14px/normal Helvetica, Arial, Verdana, sans-serif;
-    color: #666;
+    font: 13px/29px Helvetica, Arial, Verdana, sans-serif;
+    color: #2c2c2c;
 }
 .copyright {
     float: right;
     padding: 0 25px;
-    margin-top: -17px;
+    margin-top: -29px;
 }
-.active-footer {
+.active-footer, .footer a:hover {
     text-decoration: underline;
+}
+.active-footer a:hover {
+    text-decoration: none;
 }
 .clear {
     clear: both;
