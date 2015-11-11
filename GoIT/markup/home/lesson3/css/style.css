@@ -4,6 +4,7 @@
 }
 body {
     background-color: #EEE;
+    font: 13px/21px Verdana, sans-serif;
 }
 .logo {
     margin-left: 40px;
@@ -20,13 +21,10 @@ body {
     margin-top: 30px;
 }
 .top-menu {
-    height: 40px;
     font: 14px/29px Helvetica,Arial,Verdana,sans-serif;
+    height: 40px;
     list-style-type: none;
     background-image: linear-gradient(to top, #454545 0%, #5D5D5D 100%);
-}
-.top-menu li {
-    margin-right: 38px;
 }
 .top-menu li, .footer li {
     float:left;
@@ -37,14 +35,14 @@ body {
     height: 33px;
     text-decoration: none;
     color: #FFF;
-}
+    }
 .top-menu li.active, .top-menu a:hover {
     background-color: #3d3d3d;
-    border-right: 2px solid #666;
-    border-left: 2px solid #666;
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
 }
 .top-menu a:hover {
-    padding: 6px 23px 0;
+    padding: 6px 24px 0;
 }
 .top-menu li.active a:hover {
     padding: 6px 25px 0;
@@ -69,14 +67,14 @@ body {
     text-decoration: none;
     display: block;
     font: 13px/39px Helvetica, Arial, Verdana, sans-serif;
-    border: solid 1px #ccc;
+    border: 1px solid #ccc;
     border-top: 0;
     padding: 0 30px;
     height: 40px;
     color: #666;
 }
 ul.left-menu > :first-child {
-    border-top: solid 1px #ccc;
+    border-top: 1px solid #ccc;
 }
 .left-menu li.active, .left-menu li a:hover {
     background-color: #F9F9F9;
@@ -90,7 +88,7 @@ ul.left-menu > :first-child {
 }
 .image-container {
     padding: 50px 0;
-    border: solid 1px #ccc;
+    border: 1px solid #ccc;
     box-shadow: 0 0 2px #ccc;
     text-align: center;
 }
@@ -99,10 +97,9 @@ ul.left-menu > :first-child {
 }
 .text {
     margin-top: 30px;
-    font: 13px/21px Verdana, sans-serif;
     padding: 0 10px 0 50px;
 }
-.text p {
+p {
     margin-bottom: 15px;
 }
 .footer {
@@ -117,7 +114,6 @@ ul.left-menu > :first-child {
     padding: 6px 95px 0 25px;
 }
 .footer a, .copyright {
-    display: block;
     text-decoration: none;
     font: 13px/29px Helvetica, Arial, Verdana, sans-serif;
     color: #2c2c2c;
@@ -125,7 +121,8 @@ ul.left-menu > :first-child {
 .copyright {
     float: right;
     padding: 0 25px;
-    margin-top: -29px;
+    position: relative;
+    top: -29px;
 }
 .active-footer, .footer a:hover {
     text-decoration: underline;
@@ -133,6 +130,10 @@ ul.left-menu > :first-child {
 .active-footer a:hover {
     text-decoration: none;
 }
-.clear {
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
     clear: both;
+    visibility: hidden;
 }
