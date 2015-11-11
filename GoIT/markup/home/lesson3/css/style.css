@@ -40,15 +40,7 @@ body {
     background-color: #3d3d3d;
     border-right: 1px solid #666;
     border-left: 1px solid #666;
-}
-.top-menu a:hover {
-    padding: 6px 24px 0;
-}
-.top-menu li.active a:hover {
-    padding: 6px 25px 0;
-}
-.top-menu li.active:hover {
-    border: none;
+    margin: 0 -1px;
 }
 .main {
     width: 100%;
