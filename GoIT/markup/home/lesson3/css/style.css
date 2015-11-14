@@ -6,6 +6,7 @@ body {
     background-color: #EEE;
     font: 13px/21px Verdana, sans-serif;
 }
+/* HEADER */
 .logo {
     margin-left: 40px;
 }
@@ -42,6 +43,14 @@ body {
     border-left: 1px solid #666;
     margin: 0 -1px;
 }
+.top-menu li.active + li a:hover {
+    margin: 0 -1px 0 0;
+    padding: 6px 25px 0 24px;
+}
+.top-menu li:first-child a:hover {
+    border-left: none;
+    margin-left: 0;
+}
 .main {
     width: 100%;
     margin-top: 40px;
@@ -62,7 +71,6 @@ body {
     border: 1px solid #ccc;
     border-top: 0;
     padding: 0 30px;
-    height: 40px;
     color: #666;
 }
 ul.left-menu > :first-child {
@@ -74,14 +82,14 @@ ul.left-menu > :first-child {
 .left-menu li.active a, .left-menu li a:hover {
     padding: 0 30px 0 50px;
 }
+/* CONTENT */
 .content {
     width: 682px;
     float: left;
 }
 .image-container {
     padding: 50px 0;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 2px #ccc;
+    border: 1px solid #c8c8c8;
     text-align: center;
 }
 .image-container img {
@@ -94,12 +102,15 @@ ul.left-menu > :first-child {
 p {
     margin-bottom: 15px;
 }
+/* FOOTER */
 .footer {
     background-color: #E1E1E1;
     height: 40px;
 }
 .footer ul {
     overflow: hidden;
+    width: 80%;
+    float: left;
 }
 .footer li {
     list-style-type: none;
@@ -112,9 +123,8 @@ p {
 }
 .copyright {
     float: right;
-    padding: 0 25px;
+    padding: 6px 25px 0 0;
     position: relative;
-    top: -29px;
 }
 .active-footer, .footer a:hover {
     text-decoration: underline;
