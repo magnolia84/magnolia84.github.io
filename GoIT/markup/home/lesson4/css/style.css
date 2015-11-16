@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #0F90B0 url("../img/background.png") repeat-x top right;
+}
+/*HEADER*/
+.header {
+    height: 176px;
+}
+.logo {
+    padding: 7px 0 0 30px;
+    position: relative;
+    float: left;
+}
+.logo a {
+    text-decoration: none;
+    display: block;
+}
+.logo span {
+    position: absolute;
+    width: 100%;
+    font: 12px/14px Tahoma,sans-serif;
+    color: #128AA7;
+    text-align: center;
+    top: 58%;
+    left: 4%;
+}
+.right-header {
+    float: right;
+    margin-right: 34px;
+}
+.main-page {
+    width: 998px;
+    min-height: 983px;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 0 4px #ccc;
+}
+.contacts {
+    height: 92px;
+    width: 124px;
+    font: 12px/14px Tahoma,sans-serif;
+    color: #128AA7;
+    margin: 12px 0 0 auto;
+}
+.countries-container {
+    float:right;
+    position: relative;
+    height: 67px;
+    width: 368px;
+}
+.countries-container ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.countries-container li {
+    float: left;
+}
+.countries-container li:last-child {
+    margin-right: 0;
+}
+.countries-container a {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-top: 47px;
+    font: 10px/12px Tahoma,sans-serif;
+    color: #128aa7;
+    text-decoration: underline;
+    text-align: center;
+}
+.countries-container li {
+    width: 53px;
+    margin-right: 10px;
+    background-image: url('../img/country.png');
+}
+.flag1 {
+    background-position: 4px 0;
+}
+.flag2 {
+     background-position: -54px 0;
+}
+.flag3 {
+    background-position: -111px 0;
+}
+.flag4 {
+    background-position: -165px 0;
+}
+.flag5 {
+    background-position: -220px 0;
+}
+.flag6 {
+    background-position: -279px 0;
+}
+.clear {
+    clear: both;
+}
+/* CONTENT */
+.content {
+    height: 237px;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+.center-menu {
+    width: 998px;
+}
+.menu {
+    height: 29px;
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, #363636 0%, #303030 100%);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 0 4px 0;
+}
+.menu ul{
+    position: absolute;
+    left: 23px;
+    visibility: hidden;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 0 4px 0;
+    min-width: 100%;
+    padding-top: 2px;
+}
+.menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+}
+.menu li a {
+    position: relative;
+    padding: 0 36px;
+    display: block;
+    font: 14px/16px Tahoma,sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.menu ul li a {
+    font: 14px/24px Tahoma,sans-serif;
+}
+.menu ul+a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 22px;
+    height: 6px;
+    width: 5px;
+    background: url(../img/triangle.png) 0 0 no-repeat;
+}
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 29px;
+    z-index: 2;
+}
+.menu ul li {
+    background: #303030;
+    width: 100%;
+}
+.menu ul a {
+    padding: 0 10px;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+.container1, .container2, .container3 {
+    float:left;
+    width:100%;
+}
+.container1 {
+    background: #edeef0;
+    position: relative;
+    right: 58%;
+}
+.container2 {
+    background: #fff;
+    position: relative;
+    right: 21%;
+}
+.container3 {
+    background: #edeef0;
+    overflow: hidden;
+}
+.left-block {
+    float: left;
+    width: 17%;
+    position: relative;
+    left: 81%;
+    overflow: hidden;
+}
+.center-block {
+    float: left;
+    width: 54%;
+    position: relative;
+    left: 85%;
+}
+.right-block {
+    float:left;
+    width:17%;
+    position:relative;
+    left:89%;
+    overflow:hidden;
+}
+p {
+    font: 14px/24px Tahoma, sans-serif;
+    color: #424c43;
+}
+.left-block p:first-child,.right-block p:first-child {
+    font: 18px/20px Tahoma, sans-serif;
+    color: #424c43;
+    text-align: center;
+    margin: 7px 0;
+}
+/* FOOTER */
+.footer {
+    font: 12px/14px Tahoma, sans-serif;
+    height: 24px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 6px;
+}
+
+
