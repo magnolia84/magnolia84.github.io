@@ -29,27 +29,32 @@ body {
 }
 .right-header {
     float: right;
-    margin-right: 34px;
+    margin-right: 30px;
 }
 .main-page {
     width: 998px;
     min-height: 983px;
     margin: 0 auto;
     background-color: #FFF;
-    box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 4px 8px 0 #031d28;
 }
 .contacts {
-    height: 92px;
-    width: 124px;
     font: 12px/14px Tahoma,sans-serif;
     color: #128AA7;
-    margin: 12px 0 0 auto;
+    margin: 12px 0 0 226px;
+}
+.contacts span a, .contacts span a:visited {
+    color: #128AA7;
+    text-decoration: none;
+}
+.contacts span {
+    display: block;
 }
 .countries-container {
     float:right;
     position: relative;
     height: 67px;
-    width: 368px;
+    margin-top: 30px;
 }
 .countries-container ul {
     list-style-type: none;
@@ -62,10 +67,9 @@ body {
     margin-right: 0;
 }
 .countries-container a {
-    display: block;
-    width: 100%;
     float: left;
-    padding-top: 47px;
+    width: 100%;
+    padding-top: 52px;
     font: 10px/12px Tahoma,sans-serif;
     color: #128aa7;
     text-decoration: underline;
@@ -99,7 +103,7 @@ body {
 }
 /* CONTENT */
 .content {
-    height: 237px;
+    height: 236px;
     border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
 }
@@ -132,31 +136,31 @@ body {
 }
 .menu li a {
     position: relative;
-    padding: 0 36px;
+    margin: 5px 36px 0;
     display: block;
     font: 14px/16px Tahoma,sans-serif;
     color: #fff;
     text-decoration: none;
-    margin-top: 5px;
 }
 .menu ul li a {
     font: 14px/24px Tahoma,sans-serif;
+    margin: 4px 0 2px;
 }
-.menu ul+a:after {
+.menu li.has-dropdown a:after {
     content: '';
     display: block;
     position: absolute;
     top: 50%;
     margin-top: -2px;
-    right: 22px;
+    right: -13px;
     height: 6px;
     width: 5px;
     background: url(../img/triangle.png) 0 0 no-repeat;
 }
-.menu li:hover ul {
+.menu li a:hover + ul {
     visibility: visible;
     opacity: 1;
-    top: 29px;
+    top: 28px;
     z-index: 2;
 }
 .menu ul li {
@@ -181,11 +185,13 @@ body {
     background: #edeef0;
     position: relative;
     right: 58%;
+    border-right: 1px solid #c7cacf;
 }
 .container2 {
     background: #fff;
     position: relative;
     right: 21%;
+    border-right: 1px solid #c7cacf;
 }
 .container3 {
     background: #edeef0;
@@ -215,7 +221,7 @@ p {
     font: 14px/24px Tahoma, sans-serif;
     color: #424c43;
 }
-.left-block p:first-child,.right-block p:first-child {
+.left-block h1:first-child,.right-block h1:first-child {
     font: 18px/20px Tahoma, sans-serif;
     color: #424c43;
     text-align: center;
@@ -227,7 +233,7 @@ p {
     height: 24px;
     color: #FFF;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 10px;
 }
 
 
