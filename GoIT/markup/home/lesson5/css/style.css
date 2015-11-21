@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Light.eot');
+    src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue-Light.woff') format('woff'),
+    url('../fonts/HelveticaNeue-Light.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.main-page {
+    background-image: url(../img/background.png), url(../img/bottom-background.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 36px, center center;
+    min-height: 1028px;
+    width: 1215px;
+    margin: 0 auto;
+}
+.header {
+    font: 14px/18px "Helvetica Neue", Tahoma, sans-serif;
+}
+.center-menu {
+    float: right;
+    position: relative;
+}
+.offers {
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #56a2dc;
+    color: #FFF;
+}
+.offers a {
+    text-decoration: none;
+    line-height: 33px;
+}
+.offers > a {
+    padding-right: 15px;
+}
+.offers img {
+    margin: 4px 9px 0 15px;
+    float: left;
+    position: relative;
+}
+.offers span {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #4FAEDB 0%, #2E7AC4 100%);
+    width: 191px;
+    height: 36px;
+    text-align: center;
+}
+.offers span a {
+    text-decoration: underline;
+}
+.registration  a, .offers a {
+    color: #FFF;
+}
+.menu {
+    height: 36px;
+    list-style-type: none;
+    overflow: hidden;
+}
+.menu li {
+    float:left;
+}
+.menu a {
+    display: block;
+    padding: 8px 13px 0;
+    height: 28px;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu li.active, .menu a:hover {
+    background-color: #4eabda;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+.center-panel {
+    width: 562px;
+    height: 613px;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 50%;
+}
+.register {
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+    height: 62px;
+}
+h1 {
+    font: 24px/62px "Helvetica Neue", Tahoma, sans-serif;
+    color: #FFF;
+}
+.facebook {
+    margin: 36px auto 28px 0;
+    text-align: center;
+}
+.OU {
+    text-align: center;
+    font: 14px/2px "Helvetica Neue", Tahoma, sans-serif;
+    color: #999;
+    margin-bottom: 25px;
+}
+.OU span {
+    display: inline-block;
+    position: relative;
+}
+.OU span:before, .OU span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    border-bottom: 1px solid #000;
+    width: 119px;
+    margin: 0 10px;
+}
+.OU span:before {
+    right: 100%;
+}
+.OU span:after {
+    left: 100%;
+}
+form {
+    width: 278px;
+    height: 340px;
+    display: block;
+    margin: 0 auto 20px;
+}
+.login-form input {
+    display: block;
+    width: 258px;
+    height: 34px;
+    margin: 17px auto 0;
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
+    color: #ccc;
+    background-color: #100f0f;
+    border-top: 1px solid #0f0e0e;
+    border-bottom: 1px solid #4b4b4b;
+    border-right: none;
+    border-left: none;
+    padding-left: 17px;
+}
+.login-form input:focus {
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
+    color: #fffbfb;
+    box-shadow: 0 0 10px 6px rgba(104, 155, 207, 0.75);
+    background-image: linear-gradient(to top, #1f5384 0%, #1B4B79 100%);
+    border-top: 1px solid #4683aa;
+    border-bottom: 1px solid #689bcc;
+}
+.login-form label {
+    width: 275px;
+    margin: 0 auto;
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
+    color: #ccc;
+}
+input[id="sent"] {
+    width: 13px;
+    height: 13px;
+    margin: 16px 10px 0 5px;
+    display: inline-block;
+   }
+.login-form button {
+    display: block;
+    margin: 20px auto 14px;
+    width: 149px;
+    height: 35px;
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
+    color: #ccc;
+    background-image: linear-gradient(to bottom, #4EABDA 0%, #2E7AC4 100%);
+    border: 1px solid #6bb8e7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+p {
+    text-align: center;
+    font: 11px/16px "Helvetica Neue", Tahoma, sans-serif;
+    color: #ccc;
+}
