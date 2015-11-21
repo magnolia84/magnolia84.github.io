@@ -67,8 +67,7 @@ body {
     margin-right: 0;
 }
 .countries-container a {
-    float: left;
-    width: 100%;
+    display: block;
     padding-top: 52px;
     font: 10px/12px Tahoma,sans-serif;
     color: #128aa7;
