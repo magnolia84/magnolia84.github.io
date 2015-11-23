@@ -39,9 +39,10 @@ body {
     box-shadow: 0 4px 8px 0 #031d28;
 }
 .contacts {
+    float: right;
     font: 12px/14px Tahoma,sans-serif;
     color: #128AA7;
-    margin: 12px 0 0 226px;
+    margin: 12px 0 0 0;
 }
 .contacts span a, .contacts span a:visited {
     color: #128AA7;
@@ -52,11 +53,9 @@ body {
 }
 .countries-container {
     float:right;
+    clear: right;
     position: relative;
-    height: 67px;
     margin-top: 30px;
-}
-.countries-container ul {
     list-style-type: none;
     overflow: hidden;
 }
@@ -220,7 +219,7 @@ p {
     font: 14px/24px Tahoma, sans-serif;
     color: #424c43;
 }
-.left-block h1:first-child,.right-block h1:first-child {
+.left-block h2:first-child,.right-block h2:first-child {
     font: 18px/20px Tahoma, sans-serif;
     color: #424c43;
     text-align: center;
