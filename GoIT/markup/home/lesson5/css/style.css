@@ -13,14 +13,17 @@
     font-style: normal;
 }
 .main-page {
+	height:100%;
+	width:100%;
     background-image: url(../img/background.png), url(../img/bottom-background.png);
     background-repeat: no-repeat, no-repeat;
     background-position: center 36px, center center;
-    min-height: 1028px;
-    width: 1215px;
-    margin: 0 auto;
+	background-size: cover;
+	display:table;
 }
+/*HEADER*/
 .header {
+	display: table-row;
     font: 14px/18px "Helvetica Neue", Tahoma, sans-serif;
 }
 .center-menu {
@@ -30,8 +33,8 @@
 .offers {
     display: inline-block;
     float: right;
-    border-left: 1px solid #56a2dc;
     color: #FFF;
+	padding-right: 16px;
 }
 .offers a {
     text-decoration: none;
@@ -41,9 +44,11 @@
     padding-right: 15px;
 }
 .offers img {
-    margin: 4px 9px 0 15px;
+    margin: 4px 9px 0 0;
     float: left;
     position: relative;
+	border-left: 1px solid #56a2dc;
+	padding-left: 10px;
 }
 .offers span {
     display: inline-block;
@@ -83,16 +88,17 @@
     height: 0;
     width: 100%;
 }
+/*CONTENT*/
+.content {
+	display:table-cell;
+	vertical-align: middle;
+	height: 1028px; 
+}
 .center-panel {
     width: 562px;
     height: 613px;
     background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 50%;
+	margin: 0 auto;
 }
 .register {
     text-align: center;
@@ -140,7 +146,7 @@ form {
 }
 .login-form input {
     display: block;
-    width: 258px;
+    width: 275px;
     height: 34px;
     margin: 17px auto 0;
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
@@ -150,7 +156,7 @@ form {
     border-bottom: 1px solid #4b4b4b;
     border-right: none;
     border-left: none;
-    padding-left: 17px;
+	text-indent: 17px;
 }
 .login-form input:focus {
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
@@ -171,8 +177,11 @@ input[id="sent"] {
     height: 13px;
     margin: 16px 10px 0 5px;
     display: inline-block;
-   }
-.login-form button {
+ }
+input:focus[id="sent"]{
+    box-shadow: none;
+}
+  .login-form button {
     display: block;
     margin: 20px auto 14px;
     width: 149px;
