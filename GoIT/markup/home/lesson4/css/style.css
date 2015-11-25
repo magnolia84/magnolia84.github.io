@@ -219,7 +219,7 @@ p {
     font: 14px/24px Tahoma, sans-serif;
     color: #424c43;
 }
-.left-block h2:first-child,.right-block h2:first-child {
+.left-block h2,.right-block h2 {
     font: 18px/20px Tahoma, sans-serif;
     color: #424c43;
     text-align: center;
