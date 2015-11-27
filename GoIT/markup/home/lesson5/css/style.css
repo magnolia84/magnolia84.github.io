@@ -12,18 +12,9 @@
     font-weight: normal;
     font-style: normal;
 }
-.main-page {
-	height:100%;
-	width:100%;
-    background-image: url(../img/background.png), url(../img/bottom-background.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center 36px, center center;
-	background-size: cover;
-	display:table;
-}
 /*HEADER*/
 .header {
-	display: table-row;
+	background: url(../img/bottom-background.png);
     font: 14px/18px "Helvetica Neue", Tahoma, sans-serif;
 }
 .center-menu {
@@ -31,7 +22,6 @@
     position: relative;
 }
 .offers {
-    display: inline-block;
     float: right;
     color: #FFF;
 	padding-right: 16px;
@@ -46,7 +36,6 @@
 .offers img {
     margin: 4px 9px 0 0;
     float: left;
-    position: relative;
 	border-left: 1px solid #56a2dc;
 	padding-left: 10px;
 }
@@ -60,7 +49,10 @@
 .offers span a {
     text-decoration: underline;
 }
-.registration  a, .offers a {
+.offers span a:hover{
+    text-decoration: none;
+}
+.offers a {
     color: #FFF;
 }
 .menu {
@@ -81,45 +73,52 @@
 .menu li.active, .menu a:hover {
     background-color: #4eabda;
 }
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-    width: 100%;
+.header:after {
+	content: '';
+	display: block;
+	clear: both;
+	width: 100%;
 }
 /*CONTENT*/
+.main-content {
+    display: table;
+    background: url(../img/background.png)no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 1028px;
+}
 .content {
-	display:table-cell;
-	vertical-align: middle;
-	height: 1028px; 
+    display:table-cell;
+    vertical-align: middle;
 }
 .center-panel {
     width: 562px;
-    height: 613px;
-    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
 	margin: 0 auto;
 }
 .register {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
     text-align: center;
-    border-bottom: 1px solid #FFF;
-    height: 62px;
+	margin-bottom: 1px;
 }
 h1 {
-    font: 24px/62px "Helvetica Neue", Tahoma, sans-serif;
+    font: 24px/26px "Helvetica Neue", Tahoma, sans-serif;
     color: #FFF;
+	padding: 18px 0; 
+}
+.registration {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+	height: 548px;
 }
 .facebook {
-    margin: 36px auto 28px 0;
     text-align: center;
+	padding: 35px 0 20px 0;
 }
 .OU {
     text-align: center;
-    font: 14px/2px "Helvetica Neue", Tahoma, sans-serif;
-    color: #999;
-    margin-bottom: 25px;
 }
 .OU span {
+    color: #999;
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
     display: inline-block;
     position: relative;
 }
@@ -129,8 +128,9 @@ h1 {
     height: 1px;
     background: rgba(255,255,255,0.3);
     border-bottom: 1px solid #000;
-    width: 119px;
+    width: 116px;
     margin: 0 10px;
+	top: 50%;
 }
 .OU span:before {
     right: 100%;
@@ -140,50 +140,46 @@ h1 {
 }
 form {
     width: 278px;
-    height: 340px;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto;
+}
+.form-group {
+    margin: 20px auto 0;
 }
 .login-form input {
-    display: block;
     width: 275px;
     height: 34px;
-    margin: 17px auto 0;
-    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
-    color: #ccc;
     background-color: #100f0f;
-    border-top: 1px solid #0f0e0e;
+    color: #ccc;
+    font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
+	border: none;
     border-bottom: 1px solid #4b4b4b;
-    border-right: none;
-    border-left: none;
 	text-indent: 17px;
-}
+} 
 .login-form input:focus {
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
     color: #fffbfb;
     box-shadow: 0 0 10px 6px rgba(104, 155, 207, 0.75);
     background-image: linear-gradient(to top, #1f5384 0%, #1B4B79 100%);
-    border-top: 1px solid #4683aa;
     border-bottom: 1px solid #689bcc;
 }
 .login-form label {
     width: 275px;
-    margin: 0 auto;
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
     color: #ccc;
 }
 input[id="sent"] {
     width: 13px;
     height: 13px;
-    margin: 16px 10px 0 5px;
+    margin: 0 10px 0 5px;
     display: inline-block;
- }
+}
 input:focus[id="sent"]{
     box-shadow: none;
 }
-  .login-form button {
+.login-form button {
     display: block;
-    margin: 20px auto 14px;
+    margin: 20px auto 0;
     width: 149px;
     height: 35px;
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
@@ -193,7 +189,8 @@ input:focus[id="sent"]{
     border-radius: 3px;
     cursor: pointer;
 }
-p {
+.text {
+	padding: 15px 0;
     text-align: center;
     font: 11px/16px "Helvetica Neue", Tahoma, sans-serif;
     color: #ccc;
