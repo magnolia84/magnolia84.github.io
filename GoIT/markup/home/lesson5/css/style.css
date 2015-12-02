@@ -107,7 +107,6 @@ h1 {
 }
 .registration {
     background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-	height: 548px;
 }
 .facebook {
     text-align: center;
@@ -144,17 +143,17 @@ form {
     margin: 0 auto;
 }
 .form-group {
-    margin: 20px auto 0;
+    margin: 20px 0 0;
 }
 .login-form input {
-    width: 275px;
+    width: 258px;
     height: 34px;
     background-color: #100f0f;
     color: #ccc;
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
 	border: none;
     border-bottom: 1px solid #4b4b4b;
-	text-indent: 17px;
+	padding-left: 17px;
 } 
 .login-form input:focus {
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
