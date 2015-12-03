@@ -146,14 +146,14 @@ form {
     margin: 20px 0 0;
 }
 .login-form input {
-    width: 258px;
+    width: 241px;
     height: 34px;
     background-color: #100f0f;
     color: #ccc;
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
 	border: none;
     border-bottom: 1px solid #4b4b4b;
-	padding-left: 17px;
+	padding: 0 17px;
 } 
 .login-form input:focus {
     font: 14px/16px "Helvetica Neue", Tahoma, sans-serif;
