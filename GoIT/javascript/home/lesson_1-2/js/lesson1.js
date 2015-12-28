@@ -22,17 +22,24 @@ function pow(base, exponent) {
 function helloUser() {
   var arr = [];
   for (var i = 0; i < 5; i++) {
-    arr[i] = prompt("Введіть ім'я");
+    var userInput = null;
+    while (userInput === '' || userInput === null) {
+      userInput = prompt("Введіть ім'я #" + (i + 1));
+    }
+    arr[i] = userInput;
   }
   var user = prompt("Введіть ім'я користувача");
   var found = false;
   for (var j = 0; j < 5; j++) {
     if (user == arr[j]) {
       found = true;
-      alert(user + ", ви успішно увійшли");
+      break;
     }
   }
   if (!found) {
     alert(user + " не знайдений");
+  }
+  else {
+    alert(user + ", ви успішно увійшли");
   }
 }
