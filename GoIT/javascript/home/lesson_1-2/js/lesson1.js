@@ -1,15 +1,21 @@
-function pow() {
+function test_pow() {
   var x = prompt("Введіть x");
   var n = prompt("Введіть n");
+  var result = pow(x, n);
+  if(window.console) {
+    console.log("Результат: " + result);
+  }
+}
 
-  if (n < 0) {
-    alert("Потрібно ввести позитивне значення n");
+function pow(base, exponent) {
+  if (exponent < 0) {
+    return 1 / pow(base, -exponent);
   } else {
     var result = 1;
-    for (var i = 1; i <= n; i++) {
-      result *= x;
+    for (var i = 1; i <= exponent; i++) {
+      result *= base;
     }
-    console.log("Результат: " + result);
+    return result;
   }
 }
 
